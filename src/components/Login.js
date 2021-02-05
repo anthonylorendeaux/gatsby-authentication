@@ -29,7 +29,7 @@ const Login = ({ redirect }) => {
       <form
         onSubmit={handleSubmit}
         >
-        <div className="mb-4">
+        <div>
           <label htmlFor="username">
             Username
           </label>

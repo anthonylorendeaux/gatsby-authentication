@@ -22,11 +22,11 @@ const reducer = (state, action) => {
 
 const AuthContext = createContext()
 
-const AuthProvider = ({ children }) => {
+const AuthProvider = ({ children }) => (
   <AuthContext.Provider value={useReducer(reducer, DEFAULT_STATE)}>
     {children}
   </AuthContext.Provider>
-}
+)
 
 export const wrapRootElement = ({element}) => (
   <AuthProvider>
